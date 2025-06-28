@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #9994c6;
+  color: white;
+}
+
+.navbar {
+  background-color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  color: #7a69c1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  padding: 30px 60px;
+}
+
+.filters {
+  width: 220px;
+  background-color: #8882b3;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+}
+
+.filters h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.results {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.results h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  box-shadow: 6px 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
